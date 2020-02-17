@@ -15,4 +15,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("lifecycle", "onCreated invoked");
         Toast.makeText(this, "onCreated invoked", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("lifecycle", "onStart invoked");
+        Toast.makeText(this, "onStart invoked", Toast.LENGTH_SHORT).show();
+    }
 }
