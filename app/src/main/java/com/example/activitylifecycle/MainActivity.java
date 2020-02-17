@@ -36,4 +36,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("lifecycle", "onPause invoked");
         Toast.makeText(this, "onPause invoked", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("lifecycle", "onStop invoked");
+        Toast.makeText(this, "onStop invoked", Toast.LENGTH_SHORT).show();
+    }
 }
