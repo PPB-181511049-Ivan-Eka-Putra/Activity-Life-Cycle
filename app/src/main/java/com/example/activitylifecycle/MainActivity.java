@@ -50,4 +50,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("lifecycle", "onRestart invoked");
         Toast.makeText(this, "onRestart invoked", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("lifecycle", "onDestroy invoked");
+        Toast.makeText(this, "onDestroy invoked", Toast.LENGTH_SHORT).show();
+    }
 }
