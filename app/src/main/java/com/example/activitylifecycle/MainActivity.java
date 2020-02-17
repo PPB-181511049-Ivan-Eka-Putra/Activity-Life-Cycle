@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("lifecycle", "onCreated invoked");
-        Toast.makeText(this, "onCreated invoked", Toast.LENGTH_SHORT).show();
+        Log.d("lifecycle", "onCreate invoked");
+        Toast.makeText(this, "onCreate invoked", Toast.LENGTH_SHORT).show();
     }
 
     @Override
